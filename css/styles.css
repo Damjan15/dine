@@ -395,6 +395,30 @@ img {
   width: 250px;
 }
 
+/* ====== FOOTER ====== */
+.footer {
+  background-color: var(--primary-gray);
+  padding: 60px 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-logo img {
+  width: 100px;
+  height: 40px;
+}
+
+.footer ul li {
+  color: #fff;
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
 /* ====== MEDIA QUERIES ====== */
 @media screen and (max-width: 1200px) {
   /* Hero */
@@ -630,5 +654,15 @@ img {
   .cta h2 {
     font-size: 32px;
     line-height: 40px;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 30px;
   }
 }
