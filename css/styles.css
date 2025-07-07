@@ -419,6 +419,44 @@ img {
   font-weight: 400;
 }
 
+/* ====== RESERVATION ====== */
+.reservation {
+  background: url("../images/booking/hero-bg-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.reservation-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.reservation-logo img {
+  width: 100px;
+  height: 40px;
+}
+
+.reservation-content {
+  max-width: 445px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.reservation-content h1 {
+  color: #fff;
+}
+
+.reservation-content p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+}
+
 /* ====== MEDIA QUERIES ====== */
 @media screen and (max-width: 1200px) {
   /* Hero */
@@ -549,6 +587,28 @@ img {
   .details-images .details-pattern {
     top: 500px;
   }
+
+  /* Reservation Header */
+  .reservation {
+    padding: 40px 0;
+  }
+
+  .reservation-flex {
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 80px;
+  }
+  .reservation-content h1 {
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 300;
+  }
+
+  .reservation-content p {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -664,5 +724,16 @@ img {
 
   .footer-logo {
     margin-bottom: 30px;
+  }
+
+  /* Reservation Header */
+  .reservation-content h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .reservation-content p {
+    font-size: 16px;
+    line-height: 26px;
   }
 }
