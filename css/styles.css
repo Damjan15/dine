@@ -626,4 +626,9 @@ img {
     background-image: url("../images/homepage/ready-bg-mobile.jpg");
     text-align: center;
   }
+
+  .cta h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
