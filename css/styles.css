@@ -35,6 +35,11 @@ img {
 }
 
 /* ====== UTILITY CLASSES ====== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .heading-xl {
   font-size: 5rem;
   line-height: 5rem;
@@ -147,11 +152,103 @@ img {
   display: none;
 }
 
-/* ====== SECTIONS ====== */
-@import url("sections/header.css");
-@import url("sections/info.css");
-@import url("sections/menu.css");
-@import url("sections/slider.css");
-@import url("sections/cta.css");
-@import url("sections/footer.css");
-@import url("sections/reservation.css");
+/* ====== HERO ====== */
+.hero {
+  background-image: url("../images/homepage/hero-bg-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.hero-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.hero img {
+  width: 100px;
+  height: 40px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-content h1 {
+  color: #fff;
+  max-width: 507px;
+}
+
+.hero-content p {
+  color: #fff;
+  max-width: 445px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.hero-content .btn {
+  width: 245px;
+}
+
+/* ====== MEDIA QUERIES ====== */
+@media screen and (max-width: 1200px) {
+  /* Hero */
+  .hero {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+  /* Hero */
+  .hero {
+    background-image: url("../images/homepage/hero-bg-tablet.jpg");
+    padding-bottom: 30px;
+  }
+
+  .hero-content {
+    margin-top: 30px;
+    align-items: center;
+  }
+
+  .hero-flex {
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    line-height: 64px;
+    width: 100%;
+  }
+
+  .hero p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Hero */
+  .hero {
+    background-image: url("../images/homepage/hero-bg-mobile.jpg");
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
