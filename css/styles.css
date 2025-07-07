@@ -1,0 +1,157 @@
+/* ====== BASE STYLES & RESET ====== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-beaver: #9e7f66;
+  --primary-gray: #111111;
+  --secondary-mirage: #17192b;
+  --secondary-clay: #242b37;
+  --secondary-gray: #5c6779;
+  --font-spartan: "League Spartan", sans-serif;
+}
+
+html,
+body {
+  font-family: var(--font-spartan);
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* ====== UTILITY CLASSES ====== */
+.heading-xl {
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 300;
+}
+
+.heading-lg {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: bold;
+}
+
+.heading-md {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+.heading-sm {
+  font-size: 17px;
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  display: block;
+  min-width: 150px;
+  height: 64px;
+  padding: 0 10px;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.btn-dark {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-dark:hover:enabled {
+  background: #fff;
+  color: var(--secondary-mirage);
+}
+
+.btn-dark:disabled {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: not-allowed;
+}
+
+.btn-light {
+  border: 1px solid var(--primary-gray);
+  color: var(--primary-gray);
+}
+
+.btn-light:hover:enabled {
+  background: var(--primary-gray);
+  color: #fff;
+}
+
+.btn-light:disabled {
+  border: 1px solid rgba(17, 17, 17, 0.3);
+  color: rgba(17, 17, 17, 0.3);
+  cursor: not-allowed;
+}
+
+.form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form .form-group input {
+  border: none;
+  background: transparent;
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--primary-gray);
+  outline: none;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.form .form-group input::placeholder {
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 28px;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.form .form-group.error input {
+  border-bottom-color: #b54949;
+}
+
+.form .form-group.error input::placeholder {
+  color: rgb(181, 73, 73, 0.5);
+}
+
+.form .form-group .form-error {
+  color: #b54949;
+  font-size: 15px;
+  font-weight: 500;
+  display: none;
+}
+
+/* ====== SECTIONS ====== */
+@import url("sections/header.css");
+@import url("sections/info.css");
+@import url("sections/menu.css");
+@import url("sections/slider.css");
+@import url("sections/cta.css");
+@import url("sections/footer.css");
+@import url("sections/reservation.css");
