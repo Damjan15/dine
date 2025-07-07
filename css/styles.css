@@ -378,6 +378,23 @@ img {
   line-height: 26px;
 }
 
+/* ====== CTA ====== */
+.cta {
+  background-image: url("../images/homepage/ready-bg-desktop.jpg");
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cta h2 {
+  color: #fff;
+}
+
+.cta .btn {
+  width: 250px;
+}
+
 /* ====== MEDIA QUERIES ====== */
 @media screen and (max-width: 1200px) {
   /* Hero */
@@ -465,6 +482,14 @@ img {
   .menu-list {
     flex-direction: column;
     text-align: start;
+  }
+
+  /* CTA */
+  .cta {
+    background-image: url("../images/homepage/ready-bg-tablet.jpg");
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 272px;
   }
 }
 
@@ -594,5 +619,11 @@ img {
 
   .menu-item-images .menu-item-image-mobile {
     display: block;
+  }
+
+  /* CTA */
+  .cta {
+    background-image: url("../images/homepage/ready-bg-mobile.jpg");
+    text-align: center;
   }
 }
