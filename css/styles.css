@@ -426,13 +426,21 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
+  position: relative;
 }
 
 .reservation-flex {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.reservation-info {
+  height: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%;
 }
 
 .reservation-logo img {
@@ -455,6 +463,46 @@ img {
   color: #fff;
   font-size: 20px;
   line-height: 30px;
+}
+
+.reservation-form {
+  background-color: #fff;
+  width: 540px;
+  padding: 40px 60px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: -90px;
+  right: 50px;
+  z-index: 20;
+}
+
+.reservation-form .form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reservation-form .btn {
+  margin-top: 40px;
+}
+
+/* ====== BANNER ====== */
+.banner {
+  height: 400px;
+  position: relative;
+}
+
+.banner-patterns .banner-pattern-curve {
+  width: 70%;
+  height: 320px;
+}
+
+.banner-patterns .banner-pattern-lines {
+  width: 160px;
+  height: 76px;
+  position: absolute;
+  top: 250px;
+  right: 450px;
 }
 
 /* ====== MEDIA QUERIES ====== */
@@ -553,6 +601,22 @@ img {
     justify-content: space-evenly;
     height: 272px;
   }
+
+  /* Reservation */
+  .reservation-flex {
+    flex-direction: column;
+  }
+
+  .reservation-info {
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+    gap: 30px;
+  }
+
+  .reservation-form {
+    position: static;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -588,9 +652,10 @@ img {
     top: 500px;
   }
 
-  /* Reservation Header */
+  /* Reservation */
   .reservation {
     padding: 40px 0;
+    background: url("../images/booking/hero-bg-tablet.jpg");
   }
 
   .reservation-flex {
@@ -608,6 +673,11 @@ img {
   .reservation-content p {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  /* Banner */
+  .banner-patterns {
+    display: none;
   }
 }
 
@@ -726,7 +796,13 @@ img {
     margin-bottom: 30px;
   }
 
-  /* Reservation Header */
+  /* Reservation */
+  .reservation {
+    background: url("../images/booking/hero-bg-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
   .reservation-content h1 {
     font-size: 32px;
     line-height: 40px;
@@ -735,5 +811,10 @@ img {
   .reservation-content p {
     font-size: 16px;
     line-height: 26px;
+  }
+
+  .reservation-form {
+    width: 350px;
+    padding: 20px 30px;
   }
 }
