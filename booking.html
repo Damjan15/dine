@@ -33,26 +33,22 @@
 
             <!-- Contact Form -->
             <section class="reservation-form">
-                <form class="form">
+                <form class="form" action="https://formspree.io/f/xanjgjbe" method="POST">
                     <div class="form-group">
-                        <input type="text" placeholder="Name" name="name" id="name">
-                        <span class="form-error">This field is required</span>
+                        <input type="text" placeholder="Name" name="name" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="email" placeholder="Email" name="email" id="email">
-                        <span class="form-error">This field is required</span>
+                        <input type="email" placeholder="Email" name="email" required>
                     </div>
 
 
                     <div class="form-group">
-                        <input type="text" placeholder="Reservation Date (e.g July 15, 2025)" name="date" id="date">
-                        <span class="form-error">This field is required</span>
+                        <input type="text" placeholder="Reservation Date (e.g July 15, 2025)" name="date" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="text" placeholder="Number of Guests" name="guests" id="guests">
-                        <span class="form-error">This field is required</span>
+                        <input type="text" placeholder="Number of Guests" name="guests" required>
                     </div>
 
                     <button class="btn btn-secondary">Make Reservation</button>

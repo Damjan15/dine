@@ -155,19 +155,8 @@ img {
   color: rgba(17, 17, 17, 0.6);
 }
 
-.form .form-group.error input {
-  border-bottom-color: #b54949;
-}
-
 .form .form-group.error input::placeholder {
   color: rgb(181, 73, 73, 0.5);
-}
-
-.form .form-group .form-error {
-  color: #b54949;
-  font-size: 15px;
-  font-weight: 500;
-  display: none;
 }
 
 /* ====== HERO ====== */
